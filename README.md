@@ -1,6 +1,6 @@
 # NLP
 
-import torch
+```import torch
 import torch.nn as nn
 
 class Transformer(nn.Module):
@@ -14,7 +14,7 @@ class Transformer(nn.Module):
         x = self.embedding(x)
         x = self.transformer(x)
         x = self.fc(x)
-        return x
+        return x```
 
 # Instantiate the model with hyperparameters
 model = Transformer(d_model=512, nhead=8, num_layers=6)
